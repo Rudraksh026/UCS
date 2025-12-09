@@ -7,7 +7,7 @@ const pastEvents = [
   {
     title: "Pant Jayanti 2025",
     description: "A mesmerizing evening of classical dance performances",
-    image: eventDance,
+    image: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/events/Pant%20Jayanti%202025/PantJayanti.webp",
   },
   {
     title: "Kishan Mela 2025",

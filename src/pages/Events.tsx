@@ -69,6 +69,13 @@ const Events = () => {
       date: "October 11, 2025",
       image: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/events/118th%20Kishan%20Mela/KishanMela.webp",
     },
+    {
+      id: 7,
+      title: "Pant Jayanti 2025",
+      category: "Cultural Eve",
+      date: "September 10, 2025",
+      image: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/events/Pant%20Jayanti%202025/PantJayanti.webp",
+    },
   ];
 
   return (
