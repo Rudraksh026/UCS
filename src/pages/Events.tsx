@@ -57,10 +57,10 @@ const Events = () => {
     },
     {
       id: 5,
-      title: "Fusion Music Festival",
-      category: "Music",
-      date: "October 5, 2023",
-      image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=500&fit=crop",
+      title: "Band Show 2025",
+      category: "Competition",
+      date: "November 12, 2023",
+      image: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/events/Band%20Show%202025/BandShow.webp",
     },
     {
       id: 6,

@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import eventDance from "@/assets/event-dance.jpg";
 import eventMusic from "@/assets/event-music.jpg";
-import eventWorkshop from "@/assets/event-workshop.jpg";
 
 const pastEvents = [
   {
@@ -18,7 +17,7 @@ const pastEvents = [
   {
     title: "The Band Show 2025",
     description: "Celebrating the art of traditional Indian floor designs",
-    image: eventWorkshop,
+    image: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/events/Band%20Show%202025/BandShow.webp",
   },
   {
     title: "Alumni Meet 2025",
