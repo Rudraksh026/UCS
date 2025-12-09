@@ -66,7 +66,7 @@ const Events = () => {
       id: 6,
       title: "118th Kishan Mela",
       category: "Cultural Eve",
-      date: "October 11, 2025",
+      date: "October 10, 2025",
       image: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/events/118th%20Kishan%20Mela/KishanMela.webp",
     },
     {

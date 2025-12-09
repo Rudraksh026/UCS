@@ -1,27 +1,25 @@
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import eventDance from "@/assets/event-dance.jpg";
-import eventMusic from "@/assets/event-music.jpg";
 
 const pastEvents = [
   {
     title: "Pant Jayanti 2025",
-    description: "A mesmerizing evening of classical dance performances",
+    description: "Honouring the legacy of Pandit Govind Ballabh Pant and his vision for a progressive society.",
     image: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/events/Pant%20Jayanti%202025/PantJayanti.webp",
   },
   {
     title: "Kishan Mela 2025",
-    description: "An enchanting night of Indian classical music",
+    description: "Celebrating the hands that nourish the nation",
     image: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/events/118th%20Kishan%20Mela/KishanMela.webp",
   },
   {
     title: "The Band Show 2025",
-    description: "Celebrating the art of traditional Indian floor designs",
+    description: "Where music lights up the night and talent takes the stage.",
     image: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/events/Band%20Show%202025/BandShow.webp",
   },
   {
     title: "Alumni Meet 2025",
-    description: "An enchanting night of Cultural Eve in Alumni Meet 2025",
+    description: "Reconnecting memories, celebrating journeys, and rebuilding connections with the help of the UCS family.",
     image: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/events/Alumni%20Meet%202025/alumni.webp",
   },
 ];
