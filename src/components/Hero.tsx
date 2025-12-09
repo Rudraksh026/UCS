@@ -21,26 +21,8 @@ const Hero = () => {
         alt="Classical dancer silhouette"
         className="absolute left-0 bottom-0 h-[70vh] opacity-15 object-contain pointer-events-none select-none animate-float"
       />
-      <img
-        src={singerSilhouette1}
-        alt="Classical singer silhouette"
-        className="absolute left-[15%] bottom-0 h-[50vh] opacity-10 object-contain pointer-events-none select-none animate-float"
-        style={{ animationDelay: "1s" }}
-      />
-
       {/* Right side - Dancer and Singer Silhouettes */}
-      <img
-        src={dancerSilhouette2}
-        alt="Odissi dancer silhouette"
-        className="absolute right-0 bottom-0 h-[60vh] opacity-15 object-contain pointer-events-none select-none animate-float"
-        style={{ animationDelay: "2s" }}
-      />
-      <img
-        src={singerSilhouette2}
-        alt="Classical musician silhouette"
-        className="absolute right-[15%] bottom-0 h-[55vh] opacity-10 object-contain pointer-events-none select-none animate-float"
-        style={{ animationDelay: "3s" }}
-      />
+
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 text-center">
