@@ -17,7 +17,7 @@ const About = () => {
         alt=""
         className="absolute right-0 top-1/2 -translate-y-1/2 h-[80vh] opacity-5 pointer-events-none"
       />
-      
+
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left content */}
@@ -26,23 +26,33 @@ const About = () => {
               About Us
             </p>
             <h2 className="font-display text-4xl md:text-5xl text-foreground mb-6 leading-tight">
-              Preserving Heritage,<br />
-              <span className="text-butter-muted">Inspiring Futures</span>
+              Empowering Events,
+              <br />
+              <span className="text-butter-muted">Connecting Communities</span>
             </h2>
             <div className="section-divider !mx-0 mb-8" />
-            
+
             <p className="text-muted-foreground mb-6 leading-relaxed">
-              Sanskriti is the premier cultural society of our university, dedicated to 
-              promoting and preserving the rich tapestry of Indian classical arts. Founded 
-              in 2005, we have grown into a vibrant community of artists, performers, and 
-              culture enthusiasts.
+              The University Cultural Society (UCS), founded in 1968, is the
+              central cultural body of our university, responsible for planning,
+              organising, and managing major events throughout the year. We
+              bring students together through meaningful cultural activities
+              while ensuring that every event runs smoothly, creatively, and
+              professionally.
+              <br />
+              From flagship events like Pant Jayanti, the bi-annual Kisan Mela,
+              and the Alumni Meet, to various events, UCS takes the lead in
+              coordinating performances, managing logistics, and engaging
+              participants from across the university.
             </p>
             <p className="text-muted-foreground mb-8 leading-relaxed">
-              From the graceful movements of Bharatanatyam to the soulful melodies of 
-              Hindustani classical music, we celebrate every art form that makes our 
-              cultural heritage unique and timeless.
+              With every event we conduct, our goal is to offer students
+              opportunities to participate, perform, volunteer, and grow—both
+              personally and artistically. 
+              <br />At UCS, we don’t just organise
+              events— we build experiences, encourage teamwork, and create
+              moments that unite our university.
             </p>
-
           </div>
 
           {/* Right stats grid */}
@@ -53,7 +63,9 @@ const About = () => {
                 className="bg-card p-8 rounded-2xl border border-border/50 card-glow text-center"
               >
                 <stat.icon className="w-8 h-8 text-butter-muted mx-auto mb-4" />
-                <p className="font-display text-4xl text-foreground mb-2">{stat.value}</p>
+                <p className="font-display text-4xl text-foreground mb-2">
+                  {stat.value}
+                </p>
                 <p className="text-muted-foreground text-sm">{stat.label}</p>
               </div>
             ))}
