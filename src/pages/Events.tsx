@@ -95,10 +95,10 @@ const Events = () => {
               Cultural Calendar
             </span>
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">
-              Upcoming <span className="text-primary">Events</span>
+              Stay tuned for the exciting events coming up at UCS!
             </h1>
             <p className="text-muted-foreground text-lg">
-              Discover and participate in our vibrant cultural events celebrating the rich heritage of Indian arts and traditions
+              From cultural celebrations to major university gatherings, each event is thoughtfully planned to bring students together and create meaningful experiences.
             </p>
           </div>
         </div>

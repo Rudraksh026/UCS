@@ -19,7 +19,7 @@ const Hero = () => {
       <img
         src={dancerSilhouette1}
         alt="Classical dancer silhouette"
-        className="absolute left-0 bottom-0 h-[70vh] opacity-15 object-contain pointer-events-none select-none animate-float"
+        className="absolute left-0 bottom-0 h-[70vh] opacity-15 object-contain pointer-events-none select-none"
       />
       {/* Right side - Dancer and Singer Silhouettes */}
 
