@@ -52,22 +52,22 @@ const Events = () => {
       id: 4,
       title: "Alumni Meet 2025",
       category: "Cultural Eve",
-      date: "November 15, 2023",
+      date: "November 15, 2025",
       image: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/events/Alumni%20Meet%202025/alumni.webp",
     },
     {
       id: 5,
       title: "Band Show 2025",
       category: "Competition",
-      date: "November 12, 2023",
+      date: "November 12, 2025",
       image: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/events/Band%20Show%202025/BandShow.webp",
     },
     {
       id: 6,
-      title: "Rangoli Competition",
-      category: "Art",
-      date: "September 20, 2023",
-      image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=800&h=500&fit=crop",
+      title: "118th Kishan Mela",
+      category: "Cultural Eve",
+      date: "October 11, 2025",
+      image: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/events/118th%20Kishan%20Mela/KishanMela.webp",
     },
   ];
 

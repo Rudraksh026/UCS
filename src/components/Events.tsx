@@ -12,7 +12,7 @@ const pastEvents = [
   {
     title: "Kishan Mela 2025",
     description: "An enchanting night of Indian classical music",
-    image: eventMusic,
+    image: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/events/118th%20Kishan%20Mela/KishanMela.webp",
   },
   {
     title: "The Band Show 2025",

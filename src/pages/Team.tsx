@@ -49,13 +49,13 @@ const Team = () => {
       name: "Vanshita",
       role: "Media Secretary",
       college: "College of Basic Science and Humanities",
-      imageUrl: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=600&h=800&fit=crop&crop=face",
+      imageUrl: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/team/Vanshita%20Mam.webp",
     },
     {
       name: "Shambhavi",
       role: "Managerial Secretary",
       college: "College of Agriculture",
-      imageUrl: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&h=800&fit=crop&crop=face",
+      imageUrl: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/team/shambhavi%20Mam.webp",
     },
     {
       name: "Gayatri Joshi",
