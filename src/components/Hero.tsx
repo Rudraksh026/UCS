@@ -50,13 +50,14 @@ const Hero = () => {
           </p>
           
           <h1 className="font-display text-5xl md:text-7xl lg:text-8xl text-foreground mb-6 leading-tight animate-fade-up opacity-0" style={{ animationDelay: "0.4s", animationFillMode: "forwards" }}>
-            Celebrating the<br />
-            <span className="text-gradient">Spirit of Culture</span>
+            Where Culture<br />
+            <span className="text-gradient">Finds Its Voice</span>
           </h1>
           
           <p className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto mb-10 animate-fade-up opacity-0" style={{ animationDelay: "0.6s", animationFillMode: "forwards" }}>
-            Where traditions come alive through dance, music, and art. 
-            Join us in preserving and celebrating our rich cultural heritage.
+            
+            The University Cultural Society (UCS) is the heart of creativity on campus - an energetic space where traditions, talent, and togetherness come alive.
+
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up opacity-0" style={{ animationDelay: "0.8s", animationFillMode: "forwards" }}>
