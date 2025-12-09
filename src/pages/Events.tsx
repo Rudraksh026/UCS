@@ -8,52 +8,52 @@ import eventMusic from "@/assets/event-music.jpg";
 import eventWorkshop from "@/assets/event-workshop.jpg";
 
 const Events = () => {
-  const upcomingEvents = [
-    {
-      id: 1,
-      title: "Nritya Utsav 2024",
-      category: "Dance Festival",
-      date: "March 15, 2024",
-      time: "6:00 PM - 10:00 PM",
-      venue: "Main Auditorium",
-      description: "A grand celebration of classical and folk dance forms from across India. Witness mesmerizing performances by renowned artists and our talented students.",
-      image: eventDance,
-      attendees: 500,
-      featured: true,
-    },
-    {
-      id: 2,
-      title: "Swar Sangam",
-      category: "Music Concert",
-      date: "March 22, 2024",
-      time: "5:00 PM - 9:00 PM",
-      venue: "Open Air Theatre",
-      description: "An evening of soulful melodies featuring classical vocal and instrumental performances. Experience the magic of Indian classical music.",
-      image: eventMusic,
-      attendees: 350,
-      featured: true,
-    },
-    {
-      id: 3,
-      title: "Kathak Masterclass",
-      category: "Workshop",
-      date: "March 28, 2024",
-      time: "10:00 AM - 4:00 PM",
-      venue: "Dance Studio, Block C",
-      description: "An intensive workshop on Kathak fundamentals and advanced techniques conducted by Padma Shri awardee Guru Malini Devi.",
-      image: eventWorkshop,
-      attendees: 50,
-      featured: false,
-    },
-  ];
+  // const upcomingEvents = [
+  //   {
+  //     id: 1,
+  //     title: "Nritya Utsav 2024",
+  //     category: "Dance Festival",
+  //     date: "March 15, 2024",
+  //     time: "6:00 PM - 10:00 PM",
+  //     venue: "Main Auditorium",
+  //     description: "A grand celebration of classical and folk dance forms from across India. Witness mesmerizing performances by renowned artists and our talented students.",
+  //     image: eventDance,
+  //     attendees: 500,
+  //     featured: true,
+  //   },
+  //   {
+  //     id: 2,
+  //     title: "Swar Sangam",
+  //     category: "Music Concert",
+  //     date: "March 22, 2024",
+  //     time: "5:00 PM - 9:00 PM",
+  //     venue: "Open Air Theatre",
+  //     description: "An evening of soulful melodies featuring classical vocal and instrumental performances. Experience the magic of Indian classical music.",
+  //     image: eventMusic,
+  //     attendees: 350,
+  //     featured: true,
+  //   },
+  //   {
+  //     id: 3,
+  //     title: "Kathak Masterclass",
+  //     category: "Workshop",
+  //     date: "March 28, 2024",
+  //     time: "10:00 AM - 4:00 PM",
+  //     venue: "Dance Studio, Block C",
+  //     description: "An intensive workshop on Kathak fundamentals and advanced techniques conducted by Padma Shri awardee Guru Malini Devi.",
+  //     image: eventWorkshop,
+  //     attendees: 50,
+  //     featured: false,
+  //   },
+  // ];
 
   const pastEvents = [
     {
       id: 4,
-      title: "Diwali Cultural Night",
-      category: "Festival",
-      date: "November 12, 2023",
-      image: "https://images.unsplash.com/photo-1574267432553-4b4628081c31?w=800&h=500&fit=crop",
+      title: "Alumni Meet 2025",
+      category: "Cultural Eve",
+      date: "November 15, 2023",
+      image: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/events/Alumni%20Meet%202025/alumni.webp",
     },
     {
       id: 5,
@@ -98,7 +98,7 @@ const Events = () => {
       </section>
 
       {/* Featured Events */}
-      <section className="py-16">
+      {/* <section className="py-16">
         <div className="container mx-auto px-6">
           <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-10">
             Featured Events
@@ -111,7 +111,6 @@ const Events = () => {
                 className="group relative bg-card rounded-3xl overflow-hidden border border-border/50 hover:border-primary/50 transition-all duration-500 hover:shadow-elegant"
               >
                 <div className="flex flex-col lg:flex-row">
-                  {/* Image */}
                   <div className="lg:w-2/5 aspect-video lg:aspect-auto relative overflow-hidden">
                     <img
                       src={event.image}
@@ -124,7 +123,7 @@ const Events = () => {
                     </span>
                   </div>
 
-                  {/* Content */}
+                  
                   <div className="lg:w-3/5 p-6 md:p-8 lg:p-10 flex flex-col justify-center">
                     <h3 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
                       {event.title}
@@ -162,10 +161,10 @@ const Events = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* All Upcoming Events */}
-      <section className="py-16 bg-espresso/5">
+      {/* <section className="py-16 bg-espresso/5">
         <div className="container mx-auto px-6">
           <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-10">
             All Upcoming Events
@@ -212,7 +211,7 @@ const Events = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Past Events */}
       <section className="py-16">
