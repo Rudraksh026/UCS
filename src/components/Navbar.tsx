@@ -83,9 +83,6 @@ const Navbar = () => {
                   </a>
                 )
               ))}
-              <button className="mt-2 px-5 py-2 bg-primary text-primary-foreground rounded-full text-sm font-medium">
-                Join Us
-              </button>
             </div>
           </div>
         )}

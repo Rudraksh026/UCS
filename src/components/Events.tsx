@@ -14,12 +14,12 @@ const pastEvents = [
   },
   {
     title: "The Band Show 2025",
-    description: "Where music lights up the night and talent takes the stage.",
+    description: "Where music lights up the night and talent takes the stage.",
     image: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/events/Band%20Show%202025/BandShow.webp",
   },
   {
     title: "Alumni Meet 2025",
-    description: "Reconnecting memories, celebrating journeys, and rebuilding connections with the help of the UCS family.",
+    description: "Reconnecting memories, celebrating journeys, and rebuilding connections with the help of the UCS family.",
     image: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/events/Alumni%20Meet%202025/alumni.webp",
   },
 ];
