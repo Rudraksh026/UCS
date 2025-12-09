@@ -1,0 +1,67 @@
+import { Users, Calendar, Award, Music } from "lucide-react";
+import dancerSilhouette1 from "@/assets/dancer-silhouette-1.png";
+
+const stats = [
+  { icon: Users, value: "10+", label: "Active Members" },
+  { icon: Calendar, value: "10+", label: "Events Yearly" },
+  { icon: Award, value: "100+", label: "Awards Won" },
+  { icon: Music, value: "8", label: "Art Forms" },
+];
+
+const About = () => {
+  return (
+    <section id="about" className="py-24 relative overflow-hidden">
+      {/* Background dancer silhouette */}
+      <img
+        src={dancerSilhouette1}
+        alt=""
+        className="absolute right-0 top-1/2 -translate-y-1/2 h-[80vh] opacity-5 pointer-events-none"
+      />
+      
+      <div className="container mx-auto px-6 relative z-10">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+          {/* Left content */}
+          <div>
+            <p className="text-butter-muted text-sm tracking-[0.2em] uppercase mb-4">
+              About Us
+            </p>
+            <h2 className="font-display text-4xl md:text-5xl text-foreground mb-6 leading-tight">
+              Preserving Heritage,<br />
+              <span className="text-butter-muted">Inspiring Futures</span>
+            </h2>
+            <div className="section-divider !mx-0 mb-8" />
+            
+            <p className="text-muted-foreground mb-6 leading-relaxed">
+              Sanskriti is the premier cultural society of our university, dedicated to 
+              promoting and preserving the rich tapestry of Indian classical arts. Founded 
+              in 2005, we have grown into a vibrant community of artists, performers, and 
+              culture enthusiasts.
+            </p>
+            <p className="text-muted-foreground mb-8 leading-relaxed">
+              From the graceful movements of Bharatanatyam to the soulful melodies of 
+              Hindustani classical music, we celebrate every art form that makes our 
+              cultural heritage unique and timeless.
+            </p>
+
+          </div>
+
+          {/* Right stats grid */}
+          <div className="grid grid-cols-2 gap-6">
+            {stats.map((stat, index) => (
+              <div
+                key={stat.label}
+                className="bg-card p-8 rounded-2xl border border-border/50 card-glow text-center"
+              >
+                <stat.icon className="w-8 h-8 text-butter-muted mx-auto mb-4" />
+                <p className="font-display text-4xl text-foreground mb-2">{stat.value}</p>
+                <p className="text-muted-foreground text-sm">{stat.label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default About;
