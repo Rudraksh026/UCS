@@ -22,8 +22,8 @@ const pastEvents = [
   },
   {
     title: "Alumni Meet 2025",
-    description: "An enchanting night of Indian classical music",
-    image: eventMusic,
+    description: "An enchanting night of Cultural Eve in Alumni Meet 2025",
+    image: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/events/Alumni%20Meet%202025/alumni.webp",
   },
 ];
 
