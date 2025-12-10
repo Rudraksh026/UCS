@@ -4,7 +4,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const pastEvents = [
   {
     title: "Pant Jayanti 2025",
-    description: "Honouring the legacy of Pandit Govind Ballabh Pant and his vision for a progressive society.",
+    description: "Honouring the legacy of Pandit Govind Ballabh Pant.",
     image: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/events/Pant%20Jayanti%202025/PantJayanti.webp",
   },
   {
@@ -19,7 +19,7 @@ const pastEvents = [
   },
   {
     title: "Alumni Meet 2025",
-    description: "Reconnecting memories, celebrating journeys, and rebuilding connections with the help of the UCS family.",
+    description: "Reconnecting memories and strengthening bonds.",
     image: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/events/Alumni%20Meet%202025/alumni.webp",
   },
 ];

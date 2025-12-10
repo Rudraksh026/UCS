@@ -11,7 +11,7 @@ const Team = () => {
     college: "College of Agriculture",
     email: "kiranagricommunication@gmail.com",
     phone: "+91 7535881397",
-    imageUrl: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/kiran_arya.webp",
+    imageUrl: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/team/Kiran%20Mam.webp",
   };
 
   const teamMembers = [
