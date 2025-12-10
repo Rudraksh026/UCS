@@ -2,7 +2,7 @@ import { Users, Calendar, Award, Music } from "lucide-react";
 import dancerSilhouette1 from "@/assets/dancer-silhouette-1.png";
 
 const stats = [
-  { icon: Users, value: "10+", label: "Active Members" },
+  { icon: Users, value: "16+", label: "Active Members" },
   { icon: Calendar, value: "10+", label: "Events Yearly" },
   { icon: Award, value: "100+", label: "Awards Won" },
   { icon: Music, value: "8", label: "Art Forms" },
