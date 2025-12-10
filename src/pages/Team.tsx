@@ -82,7 +82,7 @@ const Team = () => {
       imageUrl: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/team/vivek.webp",
     },
     {
-      name: "Astha Chand",
+      name: "Ashtha Chand",
       role: "Event Management Head",
       college: "College of Basic Science and Humanities",
       imageUrl: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/team/ashtha.webp",
