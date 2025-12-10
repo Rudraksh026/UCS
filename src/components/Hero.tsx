@@ -37,8 +37,9 @@ const Hero = () => {
           </h1>
           
           <p className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto mb-10 animate-fade-up opacity-0" style={{ animationDelay: "0.6s", animationFillMode: "forwards" }}>
-            
-            The University Cultural Society (UCS) is the heart of creativity on campus - an energetic space where traditions, talent, and togetherness come alive.
+            The University Cultural Society (UCS) is the creative heartbeat of our campus—bringing together traditions, talent, and teamwork. Through dance, music, and major university events, we offer students a platform to express and grow while creating vibrant, inclusive experiences for all.
+            <br /><br />
+            Whether you perform, organise, or simply enjoy cultural moments—UCS feels like home.
 
           </p>
           

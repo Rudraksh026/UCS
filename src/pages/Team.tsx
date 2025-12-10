@@ -25,7 +25,7 @@ const Team = () => {
       name: "Devasish Nath",
       role: "General Secretary",
       college: "College of Veterinary and Animal Sciences",
-      imageUrl: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&h=800&fit=crop&crop=face",
+      imageUrl: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/team/Devashish%20Sir.webp",
     },
     {
       name: "Ayushi Saklani",
