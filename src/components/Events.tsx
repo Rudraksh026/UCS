@@ -43,9 +43,9 @@ const Events = () => {
   };
 
   return (
-    <section id="events" className="py-24 relative">
+    <section id="events" className="py-24 relative" style={{"backgroundColor":"#1F2A44"}}>
       {/* Background accent */}
-      <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-espresso-light/20 to-transparent pointer-events-none" />
+      <div className="absolute top-0 right-0 w-1/2 h-full  from-espresso-light/20 to-transparent pointer-events-none" />
       
       <div className="container mx-auto px-6 relative z-10">
         {/* Section header */}
@@ -53,11 +53,11 @@ const Events = () => {
           <p className="text-butter-muted text-sm tracking-[0.2em] uppercase mb-4">
             Our Journey
           </p>
-          <h2 className="font-display text-4xl md:text-5xl text-foreground mb-4">
+          <h2 className="font-display text-4xl md:text-5xl text-foreground mb-4" style={{"color":"#fdf8d0"}}>
             Past Events
           </h2>
-          <div className="section-divider" />
-          <p className="text-muted-foreground mt-6 max-w-2xl mx-auto">
+          <div className="section-divider" style={{"backgroundColor":"#fdf8d0"}}/>
+          <p className="text-muted-foreground mt-6 max-w-2xl mx-auto" style={{"color":"#fff"}}>
             Relive the magical moments from our previous cultural celebrations and performances.
           </p>
         </div>
@@ -96,7 +96,7 @@ const Events = () => {
           {/* Navigation arrows */}
           <button
             onClick={goToPrevious}
-            className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-butter/20 backdrop-blur-sm text-butter hover:bg-butter/30 transition-colors flex items-center justify-center"
+            className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-butter/20 backdrop-blur-sm text-butter hover:bg-butter/30 transition-colors flex items-center justify-center" 
             aria-label="Previous slide"
           >
             <ChevronLeft className="w-6 h-6" />
@@ -110,9 +110,9 @@ const Events = () => {
           </button>
 
           {/* Dots indicator */}
-          <div className="flex justify-center gap-3 mt-6">
+          <div className="flex justify-center gap-3 mt-6" >
             {pastEvents.map((_, index) => (
-              <button
+              <button style={{"backgroundColor":"#fdf8d0"}}
                 key={index}
                 onClick={() => setCurrentIndex(index)}
                 className={`w-3 h-3 rounded-full transition-all ${

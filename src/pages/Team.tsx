@@ -22,22 +22,23 @@ const Team = () => {
       imageUrl: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/team/Harshit%20Sir.webp",
     },
     {
-      name: "Devasish Nath",
-      role: "General Secretary",
-      college: "College of Veterinary and Animal Sciences",
-      imageUrl: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/team/Devashish%20Sir.webp",
-    },
-    {
       name: "Ayushi Saklani",
-      role: "Joint Secretary",
+      role: "General Secretary",
       college: "College of Agriculture",
       imageUrl: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/team/Ayushi%20Mam.webp",
     },
     {
       name: "Aditi Rawat",
-      role: "Joint Secretary",
+      role: "General Secretary",
       college: "College of Technology",
       imageUrl: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/team/aditi%20mam.webp",
+    },
+    
+    {
+      name: "Devasish Nath",
+      role: "Joint Secretary",
+      college: "College of Veterinary and Animal Sciences",
+      imageUrl: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/team/Devashish%20Sir.webp",
     },
     {
       name: "Priyanshi Singh",
@@ -138,7 +139,7 @@ const Team = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen">
       <Navbar />
       
       {/* Hero Section - Staff Counsellor */}
@@ -213,13 +214,13 @@ const Team = () => {
       </section>
       
       {/* Team Members Section */}
-      <section className="py-20 bg-espresso/5">
+      <section className="py-20" style={{"backgroundColor":"#1F2A44"}}>
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4" style={{"color":"#fdf8d0"}}>
               Core Committee
             </h2>
-            <p className="text-muted-foreground max-w-xl mx-auto">
+            <p className="text-muted-foreground max-w-xl mx-auto" style={{"color":"#fff"}}>
               The passionate leaders who drive our cultural initiatives forward
             </p>
           </div>
