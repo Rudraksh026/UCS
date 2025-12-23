@@ -35,7 +35,7 @@ const Team = () => {
     },
     
     {
-      name: "Devasish Nath",
+      name: "Devashish Nath Mahant",
       role: "Joint Secretary",
       college: "College of Veterinary and Animal Sciences",
       imageUrl: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/team/Devashish%20Sir.webp",
