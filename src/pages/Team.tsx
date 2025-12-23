@@ -44,7 +44,7 @@ const Team = () => {
       name: "Priyanshi Singh",
       role: "Media Secretary",
       college: "College of Fisheries",
-      imageUrl: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=600&h=800&fit=crop&crop=face",
+      imageUrl: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/team/Priyanshi%20Mam.webp",
     },
     {
       name: "Vanshita",
@@ -129,12 +129,6 @@ const Team = () => {
       role: "Member",
       college: "College of Agriculture",
       imageUrl: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/team/kshitij.webp",
-    },
-    {
-      name: "Gauri Mittal",
-      role: "Member",
-      college: "College of Technology",
-      imageUrl: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/team/gauri.webp",
     },
   ];
 
