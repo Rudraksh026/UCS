@@ -4,7 +4,7 @@ import dancerSilhouette1 from "@/assets/dancer-silhouette-1.png";
 const stats = [
   { icon: Users, value: "30+", label: "Active Members" },
   { icon: Calendar, value: "5+", label: "Events Yearly" },
-  { icon: Award, value: "100+", label: "Awards Won" },
+  { icon: Calendar, value: "50+", label: "Years of Excellence" },
   { icon: Music, value: "8", label: "Art Forms" },
 ];
 
