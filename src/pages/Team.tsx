@@ -1,9 +1,11 @@
+import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import TeamMemberCard from "@/components/TeamMemberCard";
 import { Mail, Phone } from "lucide-react";
 
 const Team = () => {
+  const [displayCount, setDisplayCount] = useState(8);
   const staffCounsellor = {
     name: "Dr. Kiran Rana",
     designation: "Staff Counsellor",
@@ -104,7 +106,7 @@ const Team = () => {
       name: "Rudraksh",
       role: "Technical Head",
       college: "College of Technology",
-      imageUrl: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/team/rudraksh.webp",
+      imageUrl: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/team/Rudraksh.webp",
     },
     {
       name: "Tanishka Rajput",
@@ -129,6 +131,85 @@ const Team = () => {
       role: "Member",
       college: "College of Agriculture",
       imageUrl: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/team/kshitij.webp",
+    },
+    {
+      name: "Disha Kant",
+      role: "Member",
+      college: "College of Community Science",
+      imageUrl: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/team/Disha.webp",
+    },
+    {
+      name: "Rashi Bhatt",
+      role: "Member",
+      college: "College of Technology",
+      imageUrl: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/team/Rashi.webp",
+    },{
+      name: "Sarthak Joshi",
+      role: "Member",
+      college: "College of Agriculture",
+      imageUrl: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/team/Sarthak_Joshi.webp",
+    },{
+      name: "Udit Giri",
+      role: "Member",
+      college: "College of Technology",
+      imageUrl: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/team/Udit.webp",
+    },{
+      name: "Vansh Kapil",
+      role: "Member",
+      college: "College of Technology",
+      imageUrl: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/team/Vansh.webp",
+    },{
+      name: "Piyush Chandra Shah",
+      role: "Member",
+      college: "College of Agriculture",
+      imageUrl: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/team/Piyush.webp",
+    },{
+      name: "Dewakar Brijwasi",
+      role: "Member",
+      college: "College of Community Science",
+      imageUrl: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/team/Dewakar.webp",
+    },{
+      name: "Rajat Parashar Pandey",
+      role: "Member",
+      college: "College of Agriculture",
+      imageUrl: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/team/Rajat.webp",
+    },{
+      name: "Nandini Chauhan",
+      role: "Member",
+      college: "College of Agriculture",
+      imageUrl: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/team/Nandini.webp",
+    },
+    {
+      name: "Tanishq Vardhan",
+      role: "Member",
+      college: "College of Community Science",
+      imageUrl: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/team/Tanishq.webp",
+    },{
+      name: "Shailee Mathpal",
+      role: "Member",
+      college: "College of Community Science",
+      imageUrl: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/team/Shailee.webp",
+    },{
+      name: "Nitin Pandey",
+      role: "Member",
+      college: "College of Technology",
+      imageUrl: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/team/Nitin.webp",
+    },{
+      name: "Sarthak Kumar Singh",
+      role: "Member",
+      college: "College of Technology",
+      imageUrl: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/team/Sarthak.webp",
+    },
+    {
+      name: "Vishwajeet Chaudhary",
+      role: "Member",
+      college: "College of Basic Science and Humanities",
+      imageUrl: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/team/Vishwajeet.webp",
+    },{
+      name: "Tanmay Kumar",
+      role: "Member",
+      college: "College of Basic Science and Humanities",
+      imageUrl: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/team/Tanmay.webp",
     },
   ];
 
@@ -220,7 +301,7 @@ const Team = () => {
           </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-            {teamMembers.map((member, index) => (
+            {teamMembers.slice(0, displayCount).map((member, index) => (
               <TeamMemberCard
                 key={member.name}
                 {...member}
@@ -228,6 +309,26 @@ const Team = () => {
                 style={{ animationDelay: `${index * 100}ms` } as React.CSSProperties}
               />
             ))}
+          </div>
+
+          <div className="flex justify-center gap-4 mt-12">
+            {displayCount > 8 && (
+              <button
+                onClick={() => setDisplayCount(8)}
+                className="px-8 py-3 bg-secondary text-secondary-foreground font-semibold rounded-lg hover:bg-secondary/90 transition-all duration-300 transform hover:scale-105"
+              >
+                Show Less
+              </button>
+            )}
+            
+            {displayCount < teamMembers.length && (
+              <button
+                onClick={() => setDisplayCount(displayCount + 8)}
+                className="px-8 py-3 bg-secondary text-secondary-foreground font-semibold rounded-lg hover:bg-secondary/90 transition-all duration-300 transform hover:scale-105"
+              >
+                Show More
+              </button>
+            )}
           </div>
         </div>
       </section>

@@ -22,6 +22,16 @@ const pastEvents = [
     description: "Reconnecting memories and strengthening bonds.",
     image: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/events/Alumni%20Meet%202025/alumni.webp",
   },
+  {
+    title: "Inter University Sports Cultural Festival 2025",
+    description: "A vibrant celebration of diversity and creativity.",
+    image: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/events/StateLevelSportsMeet/statelevel.webp",
+  },
+  {
+    title: "119th Kishan Mela 2025",
+    description: "Celebrating the hands that nourish the nation",
+    image: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/events/119th%20Kishan%20Mela/119th%20Kishan%20Mela.webp",
+  },
 ];
 
 const Events = () => {

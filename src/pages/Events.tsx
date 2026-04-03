@@ -49,32 +49,49 @@ const Events = () => {
 
   const pastEvents = [
     {
+      title: "119th Kishan Mela 2025",
+      description: "Celebrating the hands that nourish the nation",
+      image:
+        "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/events/119th%20Kishan%20Mela/119th%20Kishan%20Mela.webp",
+    },
+    {
+      id: 1,
+      title: "Inter University Sports Cultural Festival 2025",
+      description: "A vibrant celebration of diversity and creativity.",
+      image:
+        "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/events/StateLevelSportsMeet/statelevel.webp",
+    },
+    {
       id: 4,
       title: "Alumni Meet 2025",
       category: "Cultural Eve",
       date: "November 15, 2025",
-      image: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/events/Alumni%20Meet%202025/alumni.webp",
+      image:
+        "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/events/Alumni%20Meet%202025/alumni.webp",
     },
     {
       id: 5,
       title: "Band Show 2025",
       category: "Competition",
       date: "November 12, 2025",
-      image: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/events/Band%20Show%202025/BandShow.webp",
+      image:
+        "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/events/Band%20Show%202025/BandShow.webp",
     },
     {
       id: 6,
       title: "118th Kishan Mela",
       category: "Cultural Eve",
       date: "October 10, 2025",
-      image: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/events/118th%20Kishan%20Mela/KishanMela.webp",
+      image:
+        "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/events/118th%20Kishan%20Mela/KishanMela.webp",
     },
     {
       id: 7,
       title: "Pant Jayanti 2025",
       category: "Cultural Eve",
       date: "September 10, 2025",
-      image: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/events/Pant%20Jayanti%202025/PantJayanti.webp",
+      image:
+        "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/events/Pant%20Jayanti%202025/PantJayanti.webp",
     },
   ];
 
@@ -98,7 +115,9 @@ const Events = () => {
               Stay tuned for the exciting events coming up at UCS!
             </h1>
             <p className="text-muted-foreground text-lg">
-              From cultural celebrations to major university gatherings, each event is thoughtfully planned to bring students together and create meaningful experiences.
+              From cultural celebrations to major university gatherings, each
+              event is thoughtfully planned to bring students together and
+              create meaningful experiences.
             </p>
           </div>
         </div>
@@ -239,7 +258,7 @@ const Events = () => {
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-espresso/90 via-espresso/40 to-transparent" />
-                
+
                 <div className="absolute bottom-0 left-0 right-0 p-5 text-butter">
                   <span className="text-xs text-butter/70 uppercase tracking-wider">
                     {event.category} • {event.date}
