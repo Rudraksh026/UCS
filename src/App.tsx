@@ -8,7 +8,9 @@ import Team from "./pages/Team";
 import Events from "./pages/Events";
 import NotFound from "./pages/NotFound";
 import Contact from "./pages/Contact";
-import { Analytics } from "@vercel/analytics/next"
+import { inject } from "@vercel/analytics";
+
+inject();
 
 const queryClient = new QueryClient();
 
