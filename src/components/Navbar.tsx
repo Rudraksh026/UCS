@@ -12,6 +12,7 @@ const Navbar = () => {
     { name: "Events", href: "/events", isRoute: true },
     { name: "About", href: isHomePage ? "#about" : "/#about", isRoute: !isHomePage },
     { name: "Team", href: "/team", isRoute: true },
+    { name: "Join Us", href: "/join", isRoute: true },
     { name: "Contact", href: "/contact", isRoute: !isHomePage },
   ];
 
