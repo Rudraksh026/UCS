@@ -49,7 +49,7 @@ const Events = () => {
 
   const pastEvents = [
     {
-      title: "119th Kishan Mela 2025",
+      title: "119th Kishan Mela",
       description: "Celebrating the hands that nourish the nation",
       image:
         "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/events/119th%20Kishan%20Mela/119th%20Kishan%20Mela.webp",
