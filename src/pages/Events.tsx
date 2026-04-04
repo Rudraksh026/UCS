@@ -1,6 +1,8 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Calendar, MapPin, Clock, Users, ArrowRight } from "lucide-react";
+import { useLazyLoad } from "@/hooks/useLazyLoad";
+import { LazyLoadImage } from "@/components/LazyLoadImage";
 
 const Events = () => {
   const upcomingEvents = [
@@ -85,7 +87,7 @@ const Events = () => {
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <div className="aspect-video relative overflow-hidden">
-                    <img
+                    <LazyLoadImage
                       src={event.image}
                       alt={event.title}
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"

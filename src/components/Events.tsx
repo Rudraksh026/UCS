@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { LazyLoadImage } from "./LazyLoadImage";
 
 const pastEvents = [
   {
@@ -82,7 +83,7 @@ const Events = () => {
                   index === currentIndex ? "opacity-100" : "opacity-0"
                 }`}
               >
-                <img
+                <LazyLoadImage
                   src={event.image}
                   alt={event.title}
                   className="w-full h-full object-cover"

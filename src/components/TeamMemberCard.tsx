@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import { LazyLoadImage } from "./LazyLoadImage";
 
 interface TeamMemberCardProps {
   name: string;
@@ -23,7 +24,7 @@ const TeamMemberCard = ({ name, role, college, imageUrl, className, style }: Tea
       
       {/* Image Container */}
       <div className="relative aspect-[1/1] overflow-hidden">
-        <img
+        <LazyLoadImage
           src={imageUrl}
           alt={name}
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"

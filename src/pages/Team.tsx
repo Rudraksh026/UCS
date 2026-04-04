@@ -2,6 +2,7 @@ import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import TeamMemberCard from "@/components/TeamMemberCard";
+import { LazyLoadImage } from "@/components/LazyLoadImage";
 import { Mail, Phone } from "lucide-react";
 
 const Team = () => {
@@ -247,7 +248,7 @@ const Team = () => {
               <div className="relative flex flex-col md:flex-row">
                 {/* Image */}
                 <div className="md:w-2/5 aspect-square md:aspect-auto">
-                  <img
+                  <LazyLoadImage
                     src={staffCounsellor.imageUrl}
                     alt={staffCounsellor.name}
                     className="w-full h-full object-cover"

@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { LazyLoadImage } from "@/components/LazyLoadImage";
 
 interface TimelineEvent {
   year: string;
@@ -107,7 +108,7 @@ const Timeline = () => {
                     {/* Image */}
                     <div className={event.side === "right" ? "lg:order-1" : "lg:order-2"}>
                       <div className="relative rounded-2xl overflow-hidden border border-border/50 shadow-lg">
-                        <img
+                        <LazyLoadImage
                           src={event.image}
                           alt={event.title}
                           className="w-full h-[300px] lg:h-[400px] object-cover transition-transform duration-700 hover:scale-105"
