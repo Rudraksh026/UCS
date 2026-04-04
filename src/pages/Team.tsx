@@ -221,27 +221,27 @@ const Team = () => {
       <section className="pt-32 pb-20 relative overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-5">
-          <div className="absolute top-20 left-10 w-64 h-64 rounded-full bg-primary blur-3xl" />
-          <div className="absolute bottom-20 right-10 w-80 h-80 rounded-full bg-primary blur-3xl" />
+          <div className="absolute top-20 left-10 w-64 h-64 rounded-full bg-primary blur-3xl animate-float" />
+          <div className="absolute bottom-20 right-10 w-80 h-80 rounded-full bg-primary blur-3xl animate-subtle-rotate" />
         </div>
         
         <div className="container mx-auto px-6 relative z-10">
           <div className="text-center mb-16">
-            <span className="inline-block px-4 py-1.5 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">
+            <span className="inline-block px-4 py-1.5 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4 animate-fade-up" style={{ animationDelay: "0.1s" }}>
               Meet Our Team
             </span>
-            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4">
+            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4 animate-title-reveal" style={{ animationDelay: "0.2s" }}>
               The People Behind
               <span className="block text-primary">University Cultural Scoiety</span>
             </h1>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+            <p className="text-muted-foreground text-lg max-w-2xl mx-auto animate-luxurious-fade" style={{ animationDelay: "0.5s" }}>
               Dedicated individuals working together to celebrate and promote our rich cultural heritage
             </p>
           </div>
           
           {/* Staff Counsellor Card */}
-          <div className="max-w-4xl mx-auto">
-            <div className="relative bg-card rounded-3xl overflow-hidden border border-border/50 shadow-elegant">
+          <div className="max-w-4xl mx-auto animate-royal-slide-in" style={{ animationDelay: "0.6s" }}>
+            <div className="relative bg-card rounded-3xl overflow-hidden border border-border/50 shadow-elegant royal-card">
               <div className="absolute inset-0 bg-gradient-radial from-primary/5 via-transparent to-transparent" />
               
               <div className="relative flex flex-col md:flex-row">
@@ -311,7 +311,7 @@ const Team = () => {
             ))}
           </div>
 
-          <div className="flex justify-center gap-4 mt-12">
+          <div className="flex justify-center gap-4 mt-12 animate-fade-up" style={{ animationDelay: "0.3s" }}>
             {displayCount > 8 && (
               <button
                 onClick={() => setDisplayCount(8)}
