@@ -67,7 +67,7 @@ const Footer = () => {
         {/* Bottom bar */}
         <div className="mt-16 pt-8 border-t border-butter/20 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-butter/60 text-sm">
-            © 2025 University Cultural Society. All rights reserved.
+            © 2026 University Cultural Society. All rights reserved.
           </p>
           <div className="flex gap-6">
             <a href="#" className="text-butter/60 hover:text-butter transition-colors text-sm">
