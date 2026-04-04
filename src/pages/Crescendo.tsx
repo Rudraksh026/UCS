@@ -88,8 +88,8 @@ const Crescendo = () => {
             {!timeRemaining.isExpired ? (
               <div className="flex flex-wrap justify-center gap-2 sm:gap-4 md:gap-8 mb-8 sm:mb-10 md:mb-12">
                 {/* Days */}
-                <div className="flex flex-col items-center">
-                  <div className="bg-primary/10 border-2 border-primary/30 rounded-lg p-3 sm:p-5 md:p-8 min-w-[60px] sm:min-w-[80px] md:min-w-[120px] backdrop-blur-sm hover:bg-primary/20 transition-all hover:shadow-lg hover:shadow-primary/50 hover:border-primary/50 glow-box">
+                <div className="flex flex-col items-center animate-royal-slide-in" style={{ animationDelay: "0.2s" }}>
+                  <div className="bg-primary/10 border-2 border-primary/30 rounded-lg p-3 sm:p-5 md:p-8 min-w-[60px] sm:min-w-[80px] md:min-w-[120px] backdrop-blur-sm hover:bg-primary/20 transition-all hover:shadow-lg hover:shadow-primary/50 hover:border-primary/50 glow-box animate-royal-countdown">
                     <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-primary animate-number-glow">
                       {timeRemaining.days.toString().padStart(2, "0")}
                     </span>
@@ -100,8 +100,8 @@ const Crescendo = () => {
                 </div>
 
                 {/* Hours */}
-                <div className="flex flex-col items-center">
-                  <div className="bg-primary/10 border-2 border-primary/30 rounded-lg p-3 sm:p-5 md:p-8 min-w-[60px] sm:min-w-[80px] md:min-w-[120px] backdrop-blur-sm hover:bg-primary/20 transition-all hover:shadow-lg hover:shadow-primary/50 hover:border-primary/50 glow-box">
+                <div className="flex flex-col items-center animate-royal-slide-in" style={{ animationDelay: "0.3s" }}>
+                  <div className="bg-primary/10 border-2 border-primary/30 rounded-lg p-3 sm:p-5 md:p-8 min-w-[60px] sm:min-w-[80px] md:min-w-[120px] backdrop-blur-sm hover:bg-primary/20 transition-all hover:shadow-lg hover:shadow-primary/50 hover:border-primary/50 glow-box animate-royal-countdown">
                     <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-primary animate-number-glow">
                       {timeRemaining.hours.toString().padStart(2, "0")}
                     </span>
@@ -112,8 +112,8 @@ const Crescendo = () => {
                 </div>
 
                 {/* Minutes */}
-                <div className="flex flex-col items-center">
-                  <div className="bg-primary/10 border-2 border-primary/30 rounded-lg p-3 sm:p-5 md:p-8 min-w-[60px] sm:min-w-[80px] md:min-w-[120px] backdrop-blur-sm hover:bg-primary/20 transition-all hover:shadow-lg hover:shadow-primary/50 hover:border-primary/50 glow-box">
+                <div className="flex flex-col items-center animate-royal-slide-in" style={{ animationDelay: "0.4s" }}>
+                  <div className="bg-primary/10 border-2 border-primary/30 rounded-lg p-3 sm:p-5 md:p-8 min-w-[60px] sm:min-w-[80px] md:min-w-[120px] backdrop-blur-sm hover:bg-primary/20 transition-all hover:shadow-lg hover:shadow-primary/50 hover:border-primary/50 glow-box animate-royal-countdown">
                     <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-primary animate-number-glow">
                       {timeRemaining.minutes.toString().padStart(2, "0")}
                     </span>
@@ -124,8 +124,8 @@ const Crescendo = () => {
                 </div>
 
                 {/* Seconds */}
-                <div className="flex flex-col items-center">
-                  <div className="bg-primary/10 border-2 border-primary/30 rounded-lg p-3 sm:p-5 md:p-8 min-w-[60px] sm:min-w-[80px] md:min-w-[120px] backdrop-blur-sm hover:bg-primary/20 transition-all hover:shadow-lg hover:shadow-primary/50 hover:border-primary/50 glow-box">
+                <div className="flex flex-col items-center animate-royal-slide-in" style={{ animationDelay: "0.5s" }}>
+                  <div className="bg-primary/10 border-2 border-primary/30 rounded-lg p-3 sm:p-5 md:p-8 min-w-[60px] sm:min-w-[80px] md:min-w-[120px] backdrop-blur-sm hover:bg-primary/20 transition-all hover:shadow-lg hover:shadow-primary/50 hover:border-primary/50 glow-box animate-royal-countdown">
                     <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-primary animate-number-glow">
                       {timeRemaining.seconds.toString().padStart(2, "0")}
                     </span>

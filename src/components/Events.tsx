@@ -60,21 +60,21 @@ const Events = () => {
       <div className="container mx-auto px-6 relative z-10">
         {/* Section header */}
         <div className="text-center mb-16">
-          <p className="text-butter-muted text-sm tracking-[0.2em] uppercase mb-4">
+          <p className="text-butter-muted text-sm tracking-[0.2em] uppercase mb-4 animate-fade-up" style={{ animationDelay: "0.2s" }}>
             Our Journey
           </p>
-          <h2 className="font-display text-4xl md:text-5xl text-foreground mb-4" style={{"color":"#fdf8d0"}}>
+          <h2 className="font-display text-4xl md:text-5xl text-foreground mb-4 animate-title-reveal" style={{"color":"#fdf8d0"}}>
             Past Events
           </h2>
           <div className="section-divider" style={{"backgroundColor":"#fdf8d0"}}/>
-          <p className="text-muted-foreground mt-6 max-w-2xl mx-auto" style={{"color":"#fff"}}>
+          <p className="text-muted-foreground mt-6 max-w-2xl mx-auto animate-luxurious-fade" style={{"color":"#fff", animationDelay: "0.6s"}}>
             Relive the magical moments from our previous cultural celebrations and performances.
           </p>
         </div>
 
         {/* Slideshow */}
         <div className="relative max-w-5xl mx-auto">
-          <div className="relative aspect-[16/9] rounded-2xl overflow-hidden shadow-elegant">
+          <div className="relative aspect-[16/9] rounded-2xl overflow-hidden shadow-elegant royal-card animate-royal-slide-in" style={{ animationDelay: "0.8s" }}>
             {pastEvents.map((event, index) => (
               <div
                 key={event.title}

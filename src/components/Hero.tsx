@@ -19,7 +19,7 @@ const Hero = () => {
       <img
         src={dancerSilhouette1}
         alt="Classical dancer silhouette"
-        className="absolute left-0 bottom-0 h-[70vh] opacity-15 object-contain pointer-events-none select-none"
+        className="absolute left-0 bottom-0 h-[70vh] opacity-15 object-contain pointer-events-none select-none animate-silhouette-glide"
       />
       {/* Right side - Dancer and Singer Silhouettes */}
 
@@ -31,20 +31,20 @@ const Hero = () => {
             University Cultural Society
           </p>
           
-          <h1 className="font-display text-5xl md:text-7xl lg:text-8xl text-foreground mb-6 leading-tight animate-fade-up opacity-0" style={{ animationDelay: "0.4s", animationFillMode: "forwards" }}>
+          <h1 className="font-display text-5xl md:text-7xl lg:text-8xl text-foreground mb-6 leading-tight animate-title-reveal" style={{ animationDelay: "0.3s" }}>
             Where Culture<br />
             <span className="text-gradient">Finds Its Voice</span>
           </h1>
           
-          <p className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto mb-10 animate-fade-up opacity-0" style={{ animationDelay: "0.6s", animationFillMode: "forwards" }}>
+          <p className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto mb-10 animate-luxurious-fade opacity-0" style={{ animationDelay: "0.8s", animationFillMode: "forwards" }}>
             The University Cultural Society (UCS) is the creative heartbeat of our campus. It's brings together traditions, talent, and teamwork. Through dance, music, and major university events, we offer students a platform to express and grow while creating vibrant, inclusive experiences for all.
 
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up opacity-0" style={{ animationDelay: "0.8s", animationFillMode: "forwards" }}>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-royal-slide-in" style={{ animationDelay: "1s" }}>
             <Link
               to="/events"
-              className="px-8 py-4 bg-primary text-primary-foreground rounded-full font-medium hover:bg-primary/90 transition-all hover:scale-105"
+              className="royal-button px-8 py-4 bg-primary text-primary-foreground rounded-full font-medium hover:bg-primary/90 transition-all"
             >
               Explore Events
             </Link>

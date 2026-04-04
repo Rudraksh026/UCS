@@ -51,12 +51,16 @@ const Events = () => {
     {
       title: "119th Kishan Mela",
       description: "Celebrating the hands that nourish the nation",
+      category: "Cultural Event",
+      date: "March 13, 2026",
       image:
         "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/events/119th%20Kishan%20Mela/119th%20Kishan%20Mela.webp",
     },
     {
       id: 1,
       title: "Inter University Sports Cultural Festival 2025",
+      category: "Cultural Eve",
+      date: "February 24, 2026",
       description: "A vibrant celebration of diversity and creativity.",
       image:
         "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/ucs/events/StateLevelSportsMeet/statelevel.webp",

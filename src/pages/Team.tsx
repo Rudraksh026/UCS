@@ -292,10 +292,10 @@ const Team = () => {
       <section className="py-20" style={{"backgroundColor":"#1F2A44"}}>
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4" style={{"color":"#fdf8d0"}}>
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4 animate-title-reveal" style={{"color":"#fdf8d0"}}>
               Core Committee
             </h2>
-            <p className="text-muted-foreground max-w-xl mx-auto" style={{"color":"#fff"}}>
+            <p className="text-muted-foreground max-w-xl mx-auto animate-luxurious-fade" style={{"color":"#fff", animationDelay: "0.4s"}}>
               The passionate leaders who drive our cultural initiatives forward
             </p>
           </div>
@@ -305,8 +305,8 @@ const Team = () => {
               <TeamMemberCard
                 key={member.name}
                 {...member}
-                className="animate-fade-up"
-                style={{ animationDelay: `${index * 100}ms` } as React.CSSProperties}
+                className="animate-royal-slide-in"
+                style={{ animationDelay: `${index * 80}ms` } as React.CSSProperties}
               />
             ))}
           </div>
@@ -315,7 +315,7 @@ const Team = () => {
             {displayCount > 8 && (
               <button
                 onClick={() => setDisplayCount(8)}
-                className="px-8 py-3 bg-secondary text-secondary-foreground font-semibold rounded-lg hover:bg-secondary/90 transition-all duration-300 transform hover:scale-105"
+                className="royal-button px-8 py-3 bg-secondary text-secondary-foreground font-semibold rounded-lg hover:bg-secondary/90 transition-all duration-300"
               >
                 Show Less
               </button>
@@ -324,7 +324,7 @@ const Team = () => {
             {displayCount < teamMembers.length && (
               <button
                 onClick={() => setDisplayCount(displayCount + 8)}
-                className="px-8 py-3 bg-secondary text-secondary-foreground font-semibold rounded-lg hover:bg-secondary/90 transition-all duration-300 transform hover:scale-105"
+                className="royal-button px-8 py-3 bg-secondary text-secondary-foreground font-semibold rounded-lg hover:bg-secondary/90 transition-all duration-300"
               >
                 Show More
               </button>

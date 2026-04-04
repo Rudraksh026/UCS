@@ -13,7 +13,7 @@ const TeamMemberCard = ({ name, role, college, imageUrl, className, style }: Tea
   return (
     <div 
       className={cn(
-        "group relative overflow-hidden rounded-2xl bg-card border border-border/50 transition-all duration-500 hover:border-primary/50 hover:shadow-elegant",
+        "group royal-card relative overflow-hidden rounded-2xl bg-card border border-border/50 transition-all duration-700 hover:border-primary/50 hover:shadow-elegant",
         className
       )}
       style={style}

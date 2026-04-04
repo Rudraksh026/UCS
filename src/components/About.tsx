@@ -25,7 +25,7 @@ const About = () => {
             <p className="text-butter-muted text-sm tracking-[0.2em] uppercase mb-4">
               About Us
             </p>
-            <h2 className="font-display text-4xl md:text-5xl text-foreground mb-6 leading-tight">
+            <h2 className="font-display text-4xl md:text-5xl text-foreground mb-6 leading-tight animate-title-reveal">
               Empowering Events,
               <br />
               <span className="text-butter-muted">Connecting Communities</span>
@@ -60,7 +60,8 @@ const About = () => {
             {stats.map((stat, index) => (
               <div
                 key={stat.label}
-                className="bg-card p-8 rounded-2xl border border-border/50 card-glow text-center"
+                className="royal-card bg-card p-8 rounded-2xl border border-border/50 card-glow text-center animate-royal-slide-in"
+                style={{ animationDelay: `${0.2 + index * 0.15}s` }}
               >
                 <stat.icon className="w-8 h-8 text-butter-muted mx-auto mb-4" />
                 <p className="font-display text-4xl text-foreground mb-2">
