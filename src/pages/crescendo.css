@@ -39,3 +39,8 @@
   backdrop-filter: blur(16px) brightness(1.1);
   transform: translateY(-2px) scale(1.02);
 }
+
+.crescendo-title {
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 
+               0 10px 20px rgba(0, 0, 0, 0.2);
+}
