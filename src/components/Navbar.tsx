@@ -10,7 +10,7 @@ const Navbar = () => {
   const navLinks = [
     { name: "Home", href: isHomePage ? "#home" : "/", isRoute: !isHomePage },
     { name: "Events", href: "/events", isRoute: true },
-    { name: "About", href: isHomePage ? "#about" : "/#about", isRoute: !isHomePage },
+    { name: "Crescendo", href: "/crescendo", isRoute: true },
     { name: "Team", href: "/team", isRoute: true },
     { name: "Join Us", href: "/join", isRoute: true },
     { name: "Contact", href: "/contact", isRoute: !isHomePage },

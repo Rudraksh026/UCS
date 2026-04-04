@@ -9,6 +9,7 @@ import Events from "./pages/Events";
 import NotFound from "./pages/NotFound";
 import Contact from "./pages/Contact";
 import JoinUs from "./pages/JoinUs";
+import Crescendo from "./pages/Crescendo";
 import { inject } from "@vercel/analytics";
 
 inject();
@@ -27,6 +28,7 @@ const App = () => (
           <Route path="/events" element={<Events />} />
           <Route path="/contact" element={<Contact/>}/>
           <Route path="/join" element={<JoinUs/>}/>
+          <Route path="/crescendo" element={<Crescendo/>}/>
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -5,7 +5,7 @@ const stats = [
   { icon: Users, value: "30+", label: "Active Members" },
   { icon: Calendar, value: "5+", label: "Events Yearly" },
   { icon: Calendar, value: "50+", label: "Years of Excellence" },
-  { icon: Music, value: "8", label: "Art Forms" },
+  { icon: Music, value: "8+", label: "Art Forms" },
 ];
 
 const About = () => {
@@ -47,10 +47,10 @@ const About = () => {
             </p>
             <p className="text-muted-foreground mb-8 leading-relaxed">
               With every event we conduct, our goal is to offer students
-              opportunities to participate, perform, volunteer, and grow—both
+              opportunities to participate, perform, volunteer, and grow, both
               personally and artistically. 
               <br />At UCS, we don’t just organise
-              events— we build experiences, encourage teamwork, and create
+              events. we build experiences, encourage teamwork, and create
               moments that unite our university.
             </p>
           </div>
