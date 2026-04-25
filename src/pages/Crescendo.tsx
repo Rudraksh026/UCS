@@ -22,7 +22,7 @@ const Crescendo = () => {
 
   useEffect(() => {
     const calculateTimeRemaining = () => {
-      const targetDate = new Date("2026-05-02").getTime();
+      const targetDate = new Date("2026-05-10").getTime();
       const now = new Date().getTime();
       const difference = targetDate - now;
 
