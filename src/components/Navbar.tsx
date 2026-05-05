@@ -11,7 +11,6 @@ const Navbar = () => {
     { name: "Home", href: isHomePage ? "#home" : "/", isRoute: !isHomePage },
     { name: "Upcoming Events", href: "/events", isRoute: true },
     { name: "Past Events", href: "/timeline", isRoute: true },
-    { name: "Crescendo", href: "/crescendo", isRoute: true },
     { name: "Team", href: "/team", isRoute: true },
     { name: "Join Us", href: "/join", isRoute: true },
     { name: "Contact", href: "/contact", isRoute: !isHomePage },

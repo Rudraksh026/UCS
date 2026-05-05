@@ -29,7 +29,6 @@ const App = () => (
           <Route path="/events" element={<Events />} />
           <Route path="/contact" element={<Contact/>}/>
           <Route path="/join" element={<JoinUs/>}/>
-          <Route path="/crescendo" element={<Crescendo/>}/>
           <Route path="/timeline" element={<Timeline/>}/>
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
