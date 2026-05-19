@@ -16,10 +16,25 @@ app.use(cors());
 app.use(express.json());
 
 // Database connection
+let dbConnected = false;
+
 mongoose
   .connect(process.env.MONGODB_URI)
-  .then(() => console.log("✓ MongoDB connected"))
-  .catch((err) => console.error("✗ MongoDB connection error:", err));
+  .then(() => {
+    dbConnected = true;
+    console.log("✓ MongoDB connected");
+  })
+  .catch((err) => {
+    console.error("✗ MongoDB connection error:", err.message);
+  });
+
+// Middleware to check DB connection
+app.use((req, res, next) => {
+  if (!dbConnected && !req.path.includes("/health")) {
+    console.warn(`DB not connected for ${req.method} ${req.path}`);
+  }
+  next();
+});
 
 // Routes
 app.use("/api/admin", adminRoutes);
@@ -33,9 +48,10 @@ app.get("/api/health", (req, res) => {
 
 // Error handling middleware
 app.use((err, req, res, next) => {
-  console.error(err);
-  res.status(err.status || 500).json({
+  console.error("Error:", err.message, err.stack);
+  res.status(err.statusCode || err.status || 500).json({
     message: err.message || "Internal Server Error",
+    error: process.env.NODE_ENV === "development" ? err.message : undefined,
   });
 });
 
