@@ -51,18 +51,26 @@ const TeamManagement = () => {
       const token = localStorage.getItem("adminToken");
 
       // Fetch core committee
-      const committeeRes = await fetch(`${API_URL}/team/committee`, {
-        headers: { Authorization: `Bearer ${token}` },
+      let committeeRes = await fetch(`${API_URL}/team/committee`, {
+        headers: token ? { Authorization: `Bearer ${token}` } : {},
       });
+      // If unauthorized or not found, try public endpoint
+      if (!committeeRes.ok && (committeeRes.status === 401 || committeeRes.status === 404)) {
+        committeeRes = await fetch(`${API_URL}/team/committee-public`);
+      }
       if (committeeRes.ok) {
         const data = await committeeRes.json();
         setCoreCommittee(data);
       }
 
       // Fetch staff counsellor
-      const counsellorRes = await fetch(`${API_URL}/team/counsellor`, {
-        headers: { Authorization: `Bearer ${token}` },
+      let counsellorRes = await fetch(`${API_URL}/team/counsellor`, {
+        headers: token ? { Authorization: `Bearer ${token}` } : {},
       });
+      // If unauthorized or not found, try public endpoint
+      if (!counsellorRes.ok && (counsellorRes.status === 401 || counsellorRes.status === 404)) {
+        counsellorRes = await fetch(`${API_URL}/team/counsellor-public`);
+      }
       if (counsellorRes.ok) {
         const data = await counsellorRes.json();
         setStaffCounsellor(data);
