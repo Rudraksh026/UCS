@@ -40,11 +40,18 @@ const EventManagement = () => {
     try {
       setLoading(true);
       const token = localStorage.getItem("adminToken");
-      const response = await fetch(`${API_URL}/events`, {
-        headers: {
+      
+      // Try to fetch with authentication first, fall back to public endpoint
+      let response = await fetch(`${API_URL}/events`, {
+        headers: token ? {
           Authorization: `Bearer ${token}`,
-        },
+        } : {},
       });
+
+      // If unauthorized or not found, try public endpoint
+      if (!response.ok && (response.status === 401 || response.status === 404)) {
+        response = await fetch(`${API_URL}/events`);
+      }
 
       if (response.ok) {
         const data = await response.json();
@@ -52,6 +59,8 @@ const EventManagement = () => {
         const past = data.filter((e: Event) => e.eventType === "past");
         setUpcomingEvents(upcoming);
         setPastEvents(past);
+      } else {
+        toast.error(`Failed to fetch events: ${response.statusText}`);
       }
     } catch (err) {
       toast.error("Failed to fetch events");

@@ -4,18 +4,11 @@ import authenticateAdmin from "../middleware/auth.js";
 
 const router = express.Router();
 
-// Get all events
-router.get("/", authenticateAdmin, async (req, res) => {
-  try {
-    const events = await Event.find().sort({ date: -1 });
-    res.json(events);
-  } catch (error) {
-    res.status(500).json({ message: "Failed to fetch events", error: error.message });
-  }
-});
+// ===== PUBLIC ROUTES (No Authentication) =====
 
-// Get events by type (upcoming/past)
-router.get("/:type", authenticateAdmin, async (req, res) => {
+// Get events by type (public) - upcoming/past
+// Must come before the general routes to avoid conflicts
+router.get("/type/:type", async (req, res) => {
   try {
     const { type } = req.params;
 
@@ -30,7 +23,19 @@ router.get("/:type", authenticateAdmin, async (req, res) => {
   }
 });
 
-// Create new event
+// Get all events (public)
+router.get("/", async (req, res) => {
+  try {
+    const events = await Event.find().sort({ date: -1 });
+    res.json(events);
+  } catch (error) {
+    res.status(500).json({ message: "Failed to fetch events", error: error.message });
+  }
+});
+
+// ===== ADMIN ROUTES (Authentication Required) =====
+
+// Create new event (admin)
 router.post("/", authenticateAdmin, async (req, res) => {
   try {
     const { title, category, date, time, venue, description, image, attendees, eventType } = req.body;
@@ -59,7 +64,7 @@ router.post("/", authenticateAdmin, async (req, res) => {
   }
 });
 
-// Update event
+// Update event (admin)
 router.put("/:id", authenticateAdmin, async (req, res) => {
   try {
     const { id } = req.params;
@@ -86,7 +91,7 @@ router.put("/:id", authenticateAdmin, async (req, res) => {
   }
 });
 
-// Delete event
+// Delete event (admin)
 router.delete("/:id", authenticateAdmin, async (req, res) => {
   try {
     const { id } = req.params;
