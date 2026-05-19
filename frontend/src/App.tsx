@@ -11,6 +11,7 @@ import Contact from "./pages/Contact";
 import JoinUs from "./pages/JoinUs";
 import Crescendo from "./pages/Crescendo";
 import Timeline from "./pages/Timeline";
+import Admin from "./pages/Admin";
 import { inject } from "@vercel/analytics";
 
 inject();
@@ -30,6 +31,7 @@ const App = () => (
           <Route path="/contact" element={<Contact/>}/>
           <Route path="/join" element={<JoinUs/>}/>
           <Route path="/timeline" element={<Timeline/>}/>
+          <Route path="/admin" element={<Admin/>}/>
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
